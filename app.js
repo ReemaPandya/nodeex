@@ -34,10 +34,10 @@ app.get('/',(req, res)=>{
   res.send('Hello World!');
 })
 
-app.get('/alien', (req,res)=>{
-  const id = req.query.id;
-  res.send('Welcome Back Alien '+ id)
-})
+// app.get('/alien', (req,res)=>{
+//   const id = req.query.id;
+//   res.send('Welcome Back Alien '+ id)
+// })
 app.get('/alien/:id', (req,res)=>{
   const id = req.params.id;
   if(id == 19){
